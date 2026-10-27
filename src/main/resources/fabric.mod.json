@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "vibevs",
+	"version": "${version}",
+	"name": "VibeVisuals",
+	"description": "Client-side visual polish: tweakable effects, overlay toggles and quality-of-life visuals with zero server requirements.",
+	"authors": [
+		"VibeVisuals"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"icon": "assets/vibevs/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.vibevs.client.VibeVisualsClient"
+		]
+	},
+	"mixins": [
+		"vibevs.mixins.json",
+		{
+			"config": "vibevs.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"required": true,
+	"package": "dev.vibevs.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"EntityRendererMixin",
+		"EnvironmentAttributeProbeMixin",
+		"GameRendererMixin",
+		"GuiMixin",
+		"ItemCooldownAccessor",
+		"CooldownInstanceAccessor",
+		"LightTextureMixin",
+		"LivingEntityRendererMixin",
+		"MinecraftAccessor",
+		"MinecraftMixin",
+		"MultiPlayerGameModeMixin",
+		"ServerListMixin",
+		"WeatherEffectRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
